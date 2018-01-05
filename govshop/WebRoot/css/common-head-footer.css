@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+div.head-panel{
+	height: 118px;
+	width: 860px;
+	background:url("../images/head-bg-line1.png") repeat-x;
+	margin: 0px auto;
+	font-size: 30px;
+	color: #fff;
+	padding-left: 40px;
+	line-height: 118px;
+}
+div.navigate-panel{
+	width: 900px;
+	margin: 3px auto;
+	height: 30px;
+	background: #f4600f;
+}
+div.main-footer{
+	width: 900px;
+	margin: auto;
+	margin-top:3px;
+	height: 50px;
+	text-align: center;
+	border-top: 3px solid #FF7E00;
+	padding-top: 10px;
+	line-height: 22px;
+}
+ul.navigate-menu-ul{
+	margin: 0px;
+	padding: 0px;
+	margin-left: 20px;
+}
+
+ul.navigate-menu-ul li{
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	font-weight: bold;
+	list-style-type: none;
+}
+ul.navigate-menu-ul li a:link,
+	ul.navigate-menu-ul li a:active,
+	ul.navigate-menu-ul li a:visited{
+	color: #fff;
+}
+ul.navigate-menu-ul li a:hover{
+	color: #333;
+}
+
+div.current-location{
+	width: 900px;
+	margin: auto;
+	margin-bottom: 3px;
+	height: 25px;
+	background: #fff url("../images/location-icon.png") no-repeat 5px 8px;
+	border-bottom: 1px dotted #888;
+	
+}
+div.current-location div{
+	float: left;
+	padding-top: 8px;
+}
+div.current-location div.location-tip{
+	margin-left: 25px;
+	font-weight: bold;
+}

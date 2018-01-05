@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+div.reg-title{
+	width:900px;
+	margin: auto;
+	background: #fff;
+	border-bottom: 3px solid #EFB686;
+}
+div.reg-title img{
+	margin: 20px;
+	margin-bottom: 5px;
+}
+div.basic-info{
+	width: 700px;
+	margin: auto;
+	background: #fff;
+	padding-left: 200px
+}
+div.advance-info{
+	width: 700px;
+	margin: 0px auto;
+	background: #fff;
+	padding-left: 200px;
+	display: none;
+}
+div.extends-info-tip{
+	width:900px;
+	margin:auto;
+	text-align: right;
+	background: #EFB686;
+	padding: 5px 0px;
+}
+ul.list-item{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.list-item li{
+	list-style-type: none;
+	margin: 5px;
+	padding: 10px;
+}
+
+ul.list-item li div.label{
+	float: left;
+	width: 60px;
+	overflow: hidden;
+	padding-top: 5px;
+	color: #333;
+}
+ul.list-item li div.content{
+	float:left;
+	overflow: hidden;
+}
+div.submit-panel{
+	width: 900px;
+	margin: auto;
+	text-align: center;
+	padding: 5px 0px;
+}
+
+

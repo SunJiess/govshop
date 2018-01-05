@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+div.login-panel{
+	width: 900px;
+	background:#EFC7AB;
+	margin: auto;
+	padding: 20px 0px;
+}
+div.login-header{
+	width: 375px;
+	margin: auto;
+	font-size: 15px;
+	/**border-bottom: 4px solid #333;**/
+	font-weight: bold;
+	padding-left:25px;
+	padding-top:9px;
+	background: url("../images/header-bar-icon.png") no-repeat;
+	height: 30px;
+	color: #fff;
+}
+div.login-content{
+	width: 400px;
+	margin: auto;
+}
+div.login-content ul{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-left: 10px; 
+}
+
+div.login-content ul li{
+	list-style-type: none;
+	margin: 5px 0px;
+}
+div.login-sub-panel{
+	height: 352px;
+	background: url("../images/login_bg.png") repeat-x;
+	width: 700px;
+	margin: auto;
+}
+div.login-sub-panel div.login-log{
+	width: 274px;
+	height: 362px;
+	background: url("../images/login_logo.png") no-repeat;
+	margin-top: 46px;
+	float: left;
+}
+div.login-items{
+	margin-top: 90px;
+	margin-left:274px;
+	background: url("../images/login-item-bg.png") 0px 11px no-repeat;
+	height: 300px; 
+}
+ul.login-lines{
+	margin: 0px;
+	padding: 0px;
+	margin-left: 70px;
+}
+ul.login-lines li{
+	list-style-type: none;
+	margin: 15px 0px;
+}

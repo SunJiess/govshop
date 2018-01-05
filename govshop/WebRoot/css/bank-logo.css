@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+.bank1{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 8px 0px;
+}
+.bank2{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 10px -40px;
+}
+.bank3{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 8px -80px;
+}
+.bank4{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 8px -120px;
+}
+.bank5{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 10px -160px;
+}
+.bank6{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 8px -200px;
+}
+.bank7{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 0px -240px;
+}
+.bank8{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 8px -280px;
+}
+.bank9{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 15px -320px;
+}
+.bank10{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 5px -360px;
+}
+.bank11{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 5px -400px;
+}
+.bank12{
+	background: url("../images/logos/bank-logo-list.png") no-repeat 5px -440px;
+}
+div.bank-list{
+	padding: 10px;
+	border: 0px solid #ccc;
+	overflow: auto;
+	_height:"1%";
+}
+div.bank-list div{
+	width: 126px;
+	height: 37px;
+	float:left;
+	border: 2px solid #ccc;
+	margin: 4px;
+}

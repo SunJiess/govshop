@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+ul.info-list{
+	padding: 0px;
+	margin: 3px;
+}
+ul.info-list li{
+	list-style-type:circle;
+	margin: 5px 20px;
+}
+div.page-bar-panel{
+	text-align: right;
+	padding:5px 10px;
+	background: #fff;
+	font-weight: bold;
+}
+div.info-list-panel{
+	width: 900px;
+	background: #EFC7AB;
+	margin:auto;
+	padding-top: 3px;
+}

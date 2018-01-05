@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+div.content-defail{
+	width: 900px;
+	background: #fff;
+	margin: auto;
+}
+div.content-defail h1.title{
+	color: blue;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+div.content-defail div.desc{
+	color: #888;
+	text-align: center;
+}
+
+div.content-defail div.content{
+	color: #333;
+	font-size: 16px;
+	line-height: 1.8em;
+	padding: 0em 1em;
+	text-indent: 2em;
+}

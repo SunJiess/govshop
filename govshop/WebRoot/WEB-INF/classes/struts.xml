@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+    <!-- struts2.5以上版本，上面的声明中必须用2.5代替2.0 -->
+<struts>
+   <constant name="struts.locale" value="zh_CN" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.i18n.reload" value="true" />
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- 允许最大上传的文件尺寸为10M -->
+	<constant name="struts.multipart.maxSize" value="10485760"/>
+	<!-- 设置资源文件的位置 -->
+    <constant name="struts.custom.i18n.resources" value="ApplicationResources"/>
+    <package name="default" namespace="/" extends="struts-default">
+   		<!-- 全局异常处理 --> 
+   		<global-results>
+   			<result name="sql">exception.jsp</result>
+   			<result name="root">exception.jsp</result>
+   		</global-results>				
+   		<global-exception-mappings>   			
+   			<exception-mapping exception="java.sql.SQLExcepion" result="sql"/>
+   			<exception-mapping exception="java.lang.Exception" result="root"/>   			
+   		</global-exception-mappings>
+   		
+   		<!-- 打开首页时，初始化首页 -->
+   		<action name="index" class="com.govshop.action.FrontEndAction" method="initMainPage">
+   			<result>main.jsp</result>
+   		</action>
+   		
+    </package>
+ 
+</struts>

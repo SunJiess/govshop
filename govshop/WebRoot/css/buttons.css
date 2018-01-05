@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+input.login{
+	width: 50px;
+	height: 22px;
+	background: url("../images/login.png") no-repeat;
+	border: 0px;
+}
+input.cancel{
+	width: 50px;
+	height: 22px;
+	background: url("../images/cancel.png") no-repeat;
+	border: 0px;
+}
+input.save{
+	width: 50px;
+	height: 22px;
+	background: url("../images/btn-save.png") no-repeat;
+	border: 0px;
+}
+input.ok{
+	width: 50px;
+	height: 22px;
+	background: url("../images/ok.png") no-repeat;
+	border: 0px;
+}
+input.reset{
+	width: 50px;
+	height: 22px;
+	background: url("../images/reset.png") no-repeat;
+	border: 0px;
+}
+input.submit{
+	width: 50px;
+	height: 22px;
+	background: url("../images/btn-submit.png") no-repeat;
+	border: 0px;
+}
+input.pass{
+	width: 50px;
+	height: 22px;
+	background: url("../images/btn-pass.png") no-repeat;
+	border: 0px;
+}
+input.refuse{
+	width: 50px;
+	height: 22px;
+	background: url("../images/btn-refuse.png") no-repeat;
+	border: 0px;
+}
+input.delete{
+	width: 50px;
+	height: 22px;
+	background: url("../images/btn-delete.png") no-repeat;
+	border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
