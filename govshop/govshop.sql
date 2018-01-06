@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : web24
+Source Server         : localhost_3306
 Source Server Version : 50717
 Source Host           : localhost:3306
 Source Database       : govshop
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50717
 File Encoding         : 65001
 
-Date: 2018-01-05 19:04:30
+Date: 2018-01-06 09:33:45
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -66,6 +66,7 @@ CREATE TABLE `admin_role_info` (
   `SAVE_TIME` datetime DEFAULT NULL COMMENT '保存时间',
   `REMARK` text COMMENT '备注',
   `LOCK_STATUS` int(11) DEFAULT '0' COMMENT '锁定状态,0:开放,1:锁定',
+  `local_status` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='综合管理后台角色信息表';
 
@@ -203,7 +204,11 @@ CREATE TABLE `business_account_info` (
   `REG_TIME` datetime DEFAULT NULL COMMENT '注册时间',
   `REMARK` text COMMENT '备注',
   `LOCK_STATUS` int(11) DEFAULT '0' COMMENT '锁定状态,0:开放,1:锁定',
-  PRIMARY KEY (`ID`)
+  PRIMARY KEY (`ID`),
+  KEY `FKF249299FD8EA10FF` (`ROLE_ID`),
+  KEY `FKF249299F71277F5F` (`BUSINESS_ID`),
+  CONSTRAINT `FKF249299F71277F5F` FOREIGN KEY (`BUSINESS_ID`) REFERENCES `business_info` (`ID`),
+  CONSTRAINT `FKF249299FD8EA10FF` FOREIGN KEY (`ROLE_ID`) REFERENCES `business_role_info` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='企业账号信息表';
 
 -- ----------------------------
@@ -270,12 +275,16 @@ CREATE TABLE `business_info` (
   `FILE_LEGAL_PERSON` varchar(100) DEFAULT NULL COMMENT '企业法人身份证复件',
   `LOCK_STATUS` int(11) DEFAULT '0' COMMENT '企业状态,0:未审核,1:通过审核,3:资料不完善,4:未通过审核,5:锁定',
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='供应商信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='供应商信息表';
 
 -- ----------------------------
 -- Records of business_info
 -- ----------------------------
-INSERT INTO `business_info` VALUES ('1', '珠海盈宝贸易有限公司', '北京市海淀区', '331021', '张三', '370284197901130819', '5', '2', '4', '53454354353425345', '54523454235345435', '54525245454545565', '234324', '2011-11-11 00:00:00', null, '中国建设银行', '543253453253543525', '李阳', '13812923222', '010-12124434', 'admin@hanyang.com', '公司简介\r\n公司简介\r\n公司简介', '主营项目\r\n主营项目\r\n主营项目', '兼营项目\r\n兼营项目\r\n兼营项目', '近期业绩\r\n近期业绩\r\n近期业绩', '1308628937062.jpg', '1308628937062.jpg', '1308628937062.jpg', '1');
+INSERT INTO `business_info` VALUES ('1', '珠海盈宝贸易有限公司', '北京市海淀区', '331021', '张1三', '370284197901130819', '5', '2', '4', '53454354353425345', '54523454235345435', '54525245454545565', '234324', '2011-11-11 00:00:00', null, '中国建设银行', '543253453253543525', '李1阳', '13812923222', '010-12124434', 'admin@hanyang.com', '公司简介\r\n公司简介\r\n公司简介', '主营项目\r\n主营项目\r\n主营项目', '兼营项目\r\n兼营项目\r\n兼营项目', '近期业绩\r\n近期业绩\r\n近期业绩', '1308628937062.jpg', '1308628937062.jpg', '1308628937062.jpg', '1');
+INSERT INTO `business_info` VALUES ('2', '华夏典当行有限公司', '北京市海淀区', '331022', '张2三', '370284197901130820', '5', '2', '4', '53454354353425346', '54523454235345436', '54525245454545566', '23432', '2011-11-11 00:00:00', null, '中国建设银行', '543253453253543526', '李2阳', '13812923223', '010-12124435', 'admin@hanyang.com', '公司简介\r\n公司简介\r\n公司简介', '主营项目\r\n主营项目\r\n主营项目', '兼营项目\r\n兼营项目\r\n兼营项目', '近期业绩\r\n近期业绩\r\n近期业绩', '1308628937062.jpg', '1308628937062.jpg', '1308628937062.jpg', '1');
+INSERT INTO `business_info` VALUES ('3', 'IBM中国有限公司', '北京市海淀区', '331023', '张3三', '370284197901130821', '5', '2', '4', '53454354353425347', '54523454235345437', '54525245454545567', '23432', '2018-01-06 09:26:39', null, '中国建设银行', '543253453253543527', '李3阳', '13812923224', '010-12124436', 'admin@hanyang.com', '公司简介\r\n公司简介\r\n公司简介', '主营项目', '兼营项目', '近期业绩', '1308628937062.jpg', '1308628937062.jpg', '1308628937062.jpg', '1');
+INSERT INTO `business_info` VALUES ('4', 'HP香港分公司', '北京市海淀区', '331024', '张4三', '370284197901130822', '5', '2', '4', '53454354353425348', '54523454235345438', '54525245454545568', '23432', '2018-01-06 09:26:43', null, '中国建设银行', '543253453253543528', '李4阳', '13812923225', '010-12124437', 'admin@hanyang.com', '公司简介\r\n公司简介\r\n公司简介', '主营项目', '兼营项目', '近期业绩', null, null, null, '0');
+INSERT INTO `business_info` VALUES ('5', 'KP香港分公司', '北京市海淀区', '331025', '张5三', '370284197901130823', '5', '2', '4', '53454354353425349', '54523454235345439', '54525245454545569', '23432', '2018-01-06 09:26:46', null, '中国建设银行', '543253453253543529', '李5阳', '13812923226', '010-12124438', 'admin@hanyang.com', '公司简介\r\n公司简介\r\n公司简介', '主营项目', '兼营项目', '近期业绩', null, null, null, '0');
 
 -- ----------------------------
 -- Table structure for business_pic_lib
@@ -347,7 +356,9 @@ CREATE TABLE `business_role_info` (
   `SAVE_TIME` datetime DEFAULT NULL COMMENT '保存时间',
   `REMARK` text COMMENT '备注',
   `LOCK_STATUS` int(11) DEFAULT '0' COMMENT '锁定状态,0:开放,1:锁定',
-  PRIMARY KEY (`ID`)
+  PRIMARY KEY (`ID`),
+  KEY `FK86CB811871277F5F` (`BUSINESS_ID`),
+  CONSTRAINT `FK86CB811871277F5F` FOREIGN KEY (`BUSINESS_ID`) REFERENCES `business_info` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='企业角色信息表';
 
 -- ----------------------------
@@ -590,12 +601,13 @@ CREATE TABLE `government_info` (
   `REG_TIME` datetime DEFAULT NULL COMMENT '注册时间',
   `LOCK_STATUS` int(11) DEFAULT '0' COMMENT '状态,0:未审核,1:通过审核,3:资料不完善,4:未通过审核,5:锁定',
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='采购单位信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='采购单位信息表';
 
 -- ----------------------------
 -- Records of government_info
 -- ----------------------------
 INSERT INTO `government_info` VALUES ('1', '成都市采购中心', '4', '四川省成都市', '121212', '老张', '028-1103231332', '028-11934343434', '介绍', '2011-11-11 11:11:11', '1');
+INSERT INTO `government_info` VALUES ('2', '', '0', '', '', '', '', '', null, null, '0');
 
 -- ----------------------------
 -- Table structure for government_pic
@@ -635,8 +647,10 @@ CREATE TABLE `gov_account_info` (
   `REG_TIME` datetime DEFAULT NULL COMMENT '注册时间',
   `REMARK` text COMMENT '备注',
   `LOCK_STATUS` int(11) DEFAULT '0' COMMENT '锁定状态,0:开放,1:锁定',
-  PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='采购单位账号信息表';
+  PRIMARY KEY (`ID`),
+  KEY `FK97B69791DEB193C2` (`GOV_ID`),
+  CONSTRAINT `FK97B69791DEB193C2` FOREIGN KEY (`GOV_ID`) REFERENCES `government_info` (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='采购单位账号信息表';
 
 -- ----------------------------
 -- Records of gov_account_info
@@ -646,6 +660,7 @@ INSERT INTO `gov_account_info` VALUES ('2', '1', '1', 'gov1', '111', '张三', '
 INSERT INTO `gov_account_info` VALUES ('3', '1', '1', 'kevin', 'kevin', '老丁', '1', '2011-06-07 17:32:53', '127.0.0.1', null, null, null, null, '0');
 INSERT INTO `gov_account_info` VALUES ('4', '1', '1', 'admin', '123', '王麻子', '0', null, '', 'nihao', 'wohao', null, '大家好', '0');
 INSERT INTO `gov_account_info` VALUES ('5', '1', '1', 'renee', '111', '人呃呃', '0', null, '', 'wowowo', 'nininini', '2011-06-18 13:01:09', '哒哒哒', '0');
+INSERT INTO `gov_account_info` VALUES ('6', '2', '0', '', '', null, '0', null, null, null, null, null, '', '0');
 
 -- ----------------------------
 -- Table structure for gov_role_deploy

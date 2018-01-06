@@ -1,7 +1,7 @@
 #MyEclipse Hibernate Properties
 #Fri Jan 05 19:45:21 CST 2018
 genBasicCompId=false
-sessionFactoryName=com.govshopping.bean.HibernateSessionFactory
+sessionFactoryName=com.govshop.bean.HibernateSessionFactory
 profile=
 daoSFId=
 jndiPath=
@@ -15,7 +15,7 @@ genVersionTag=false
 sessionFactoryId=
 basePersistenceClass=
 genAnnotations=false
-reSettingsFile=/GovShopping/hibernate.reveng.xml
-configFile=/GovShopping/src/com/govshopping/bean/hibernate.cfg.xml
+reSettingsFile=/govshop/hibernate.reveng.xml
+configFile=/govshop/src/com/govshop/bean/hibernate.cfg.xml
 createConfigFile=true
 baseDaoClass=BaseHibernateDAO

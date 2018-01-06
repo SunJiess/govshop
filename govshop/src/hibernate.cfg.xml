@@ -8,7 +8,7 @@
 	<session-factory>
 		<!-- 是数据库连接的名字，有点别称的意思，只是作为备注或者标识的属性。 -->
 		<property name="myeclipse.connection.profile">
-			govshop
+			govshop2
 		</property>
 		
 		<property name="dialect">
@@ -40,6 +40,9 @@
 		<property name="c3p0.idle_test_period">120</property>
 		<!-- 当连接池里面的连接用完的时候，C3P0一下获取的新的连接数 -->
 		<property name="c3p0.acquire_increment">2</property>
+		
+		
+		<mapping resource="com/govshop/bean/BusinessInfo.hbm.xml" />
 <!--  
 		<mapping resource="com/govshop/bean/Category.hbm.xml" />
 		<mapping resource="com/govshop/bean/Bookinfo.hbm.xml" />
