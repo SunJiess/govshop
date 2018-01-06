@@ -29,62 +29,58 @@ if(this.location != top.location)
 				<div class="title">注册供应商</div>
 				<div class="more"><a href="#">更多</a></div>
 			</div>
-			<%-- <s:debug></s:debug> --%>
+		
 			<!-- 显示数据库中部分供应商的copName -->
 			<ul class="list-info">
 				<s:iterator value="businessInfos" var="businessInfo">
 					<li><a href="#"><s:property value='#businessInfo.copName'/></a></li>
 				</s:iterator>
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
 			</ul>
-			
+		
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
 		<div class="info-block">
 			<div class="block-headr">
-				<div class="title">注册供应商</div>
+				<div class="title">工作动态</div>
 				<div class="more"><a href="#">更多</a></div>
 			</div>
 			<ul class="list-info">
-				<li><a href="#">IBM中国有限公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">IBM中国有限公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">IBM中国有限公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
+				<li><a href="#">工作动态</a></li>
+				<li><a href="#">工作动态</a></li>
+				<li><a href="#">工作动态</a></li>
+				<li><a href="#">工作动态</a></li>
+				<li><a href="#">工作动态</a></li>
+				<li><a href="#">工作动态</a></li>
+				<li><a href="#">工作动态</a></li>
 			</ul>
 		</div>
 		<div class="info-block">
 			<div class="block-headr">
-				<div class="title">注册供应商</div>
+				<div class="title">采购公告</div>
 				<div class="more"><a href="#">更多</a></div>
 			</div>
 			<ul class="list-info">
-				<li><a href="#">IBM中国有限公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">IBM中国有限公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">IBM中国有限公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
-				<li><a href="#">HP香港分公司</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
+				<li><a href="#">采购公告</a></li>
 			</ul>
 		</div>
 	</div>
@@ -103,26 +99,26 @@ if(this.location != top.location)
 				</div>
 				<div class="providers-list">
 					<div class="block-headr">
-						<div class="title">注册供应商</div>
+						<div class="title">新闻资讯</div>
 						<div class="more"><a href="#">更多</a></div>
 					</div>
 					<ul class="list-info">
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">新闻资讯</a></li>
 					</ul>
 				</div>
 			</div>
@@ -130,26 +126,26 @@ if(this.location != top.location)
 				<div class="page-big-adv">轮换广告</div>
 				<div class="dongtai-block">
 					<ul class="list-info">
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
+						<li><a href="#">重要通知</a></li>
+						<li><a href="#">重要通知</a></li>
+						<li><a href="#">重要通知</a></li>
+						<li><a href="#">重要通知</a></li>
+						<li><a href="#">重要通知</a></li>
+						<li><a href="#">重要通知</a></li>
+						<li><a href="#">重要通知</a></li>
+						<li><a href="#">重要通知</a></li>
 					</ul>
 				</div>
 				<div class="dongtai-block">
 					<ul class="list-info">
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">IBM中国有限公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
-						<li><a href="#">HP香港分公司</a></li>
+						<li><a href="#">结果公告</a></li>
+						<li><a href="#">结果公告</a></li>
+						<li><a href="#">结果公告</a></li>
+						<li><a href="#">结果公告</a></li>
+						<li><a href="#">结果公告</a></li>
+						<li><a href="#">结果公告</a></li>
+						<li><a href="#">结果公告</a></li>
+						<li><a href="#">结果公告</a></li>
 					</ul>
 				</div>
 			</div>
@@ -158,29 +154,27 @@ if(this.location != top.location)
 		<div class="main-l-b3">
 			<div class="left-sub1">
 				<div class="block-headr">
-					<div class="title">注册供应商</div>
+					<div class="title">其它标讯</div>
 					<div class="more"><a href="#">更多</a></div>
 				</div>
 				<ul class="list-info">
-					<li><a href="#">IBM中国有限公司</a></li>
-					<li><a href="#">HP香港分公司</a></li>
-					<li><a href="#">IBM中国有限公司</a></li>
-					<li><a href="#">HP香港分公司</a></li>
-					<li><a href="#">IBM中国有限公司</a></li>
-					<li><a href="#">HP香港分公司</a></li>
-					<li><a href="#">HP香港分公司</a></li>
+					<li><a href="#">其它标讯</a></li>
+					<li><a href="#">其它标讯</a></li>
+					<li><a href="#">其它标讯</a></li>
+					<li><a href="#">其它标讯</a></li>
+					<li><a href="#">其它标讯</a></li>
+					<li><a href="#">其它标讯</a></li>
 				</ul>
 			</div>
 			<div class="right-sub1">
 				<div class="block-headr1"></div>
 				<ul class="list-info">
-					<li><a href="#">IBM中国有限公司</a></li>
-					<li><a href="#">HP香港分公司</a></li>
-					<li><a href="#">IBM中国有限公司</a></li>
-					<li><a href="#">HP香港分公司</a></li>
-					<li><a href="#">HP香港分公司</a></li>
-					<li><a href="#">HP香港分公司</a></li>
-					<li><a href="#">HP香港分公司</a></li>
+					<li><a href="#">曝光台</a></li>
+					<li><a href="#">曝光台</a></li>
+					<li><a href="#">曝光台</a></li>
+					<li><a href="#">曝光台</a></li>
+					<li><a href="#">曝光台</a></li>
+					<li><a href="#">曝光台</a></li>
 				</ul>
 			</div>
 		</div>
