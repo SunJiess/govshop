@@ -43,18 +43,9 @@
 		
 		
 		<mapping resource="com/govshop/bean/BusinessInfo.hbm.xml" />
-<!--  
-		<mapping resource="com/govshop/bean/Category.hbm.xml" />
-		<mapping resource="com/govshop/bean/Bookinfo.hbm.xml" />
-		<mapping resource="com/govshop/bean/Admin.hbm.xml" />
-		<mapping resource="com/govshop/bean/Purchase.hbm.xml" />
-		<mapping resource="com/govshop/bean/Shoppingcart.hbm.xml" />
-		<mapping resource="com/govshop/bean/Inventory.hbm.xml" />
-		<mapping resource="com/govshop/bean/Orderdetail.hbm.xml" />
-		<mapping resource="com/govshop/bean/Orderlist.hbm.xml" />
-		<mapping resource="com/govshop/bean/Customer.hbm.xml" />
-		<mapping resource="com/govshop/bean/Supplier.hbm.xml" />
--->
+		<mapping resource="com/govshop/bean/FriendLink.hbm.xml" />
+		<mapping resource="com/govshop/bean/AdminInfo.hbm.xml" />
+		
 	</session-factory>
 
 </hibernate-configuration>

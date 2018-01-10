@@ -11,6 +11,7 @@ import com.govshop.bean.BusinessInfo;
 public class BusinessDaoImpl extends AbstractDao<String, BusinessInfo> implements BusinessDao {
 
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<BusinessInfo> findPartBusinessInfo() {
 		// TODO Auto-generated method stub

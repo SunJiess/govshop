@@ -20,9 +20,18 @@ public class FriendLink implements java.io.Serializable {
 	/** default constructor */
 	public FriendLink() {
 	}
-
-	/** full constructor */
+	
 	public FriendLink(Integer accountId, String url, String siteName, String logo, String remark) {
+		this.accountId = accountId;
+		this.url = url;
+		this.siteName = siteName;
+		this.logo = logo;
+		this.remark = remark;
+	}
+	
+	/** full constructor */
+	public FriendLink(Integer id,Integer accountId, String url, String siteName, String logo, String remark) {
+		this.id = id;
 		this.accountId = accountId;
 		this.url = url;
 		this.siteName = siteName;

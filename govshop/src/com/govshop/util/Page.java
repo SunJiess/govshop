@@ -21,7 +21,7 @@ public class Page {
 	 //构造函数，初始化页面显示记录数
 	public Page()
 	{
-		this.pageSize =5;
+		this.pageSize = 15;
 	}
 
 	public int getCurrentPage() {

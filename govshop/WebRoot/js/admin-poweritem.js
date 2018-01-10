@@ -2,7 +2,7 @@ var menuItems=[
 	{id:1,url:"",text:"系统信息配置",pid:0},
 	{id:2,url:"self-admin.jsp",text:"站点信息配置",pid:1},
 	{id:3,url:"midify-password.jsp",text:"密码修改",pid:1},
-	{id:4,url:"login-out.jsp",text:"注销",pid:1},
+	{id:4,url:"admin-logout.jsp",text:"注销",pid:1},
 	{id:5,url:"",text:"帐号管理",pid:0},
 	{id:6,url:"accounts-list.jsp",text:"帐号列表",pid:5},
 	{id:7,url:"accounts-edit.jsp",text:"录入帐号",pid:5},

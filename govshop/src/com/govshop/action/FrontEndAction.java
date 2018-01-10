@@ -16,6 +16,7 @@ public class FrontEndAction extends ActionSupport implements SessionAware{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
 	private Map<String, Object> session;
 	private List<BusinessInfo> businessInfos;
 	
@@ -27,7 +28,7 @@ public class FrontEndAction extends ActionSupport implements SessionAware{
 		// TODO Auto-generated method stub
 		this.session = session;
 	}
-	
+
 	public List<BusinessInfo> getBusinessInfos() {
 		return businessInfos;
 	}
@@ -38,14 +39,7 @@ public class FrontEndAction extends ActionSupport implements SessionAware{
 
 	//打开index.jsp时，初始化页面
 	public String initMainPage(){
-		
 		businessInfos = businessService.findPartBusinessInfo();
-		/*
-		if(businessInfos.size()>0)
-			System.out.println("true");
-		else
-			System.out.println("false");
-		*/
 		return SUCCESS;
 	}
 }

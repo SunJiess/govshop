@@ -27,9 +27,21 @@
    		
    		<!-- 打开首页时，初始化首页 -->
    		<action name="index" class="com.govshop.action.FrontEndAction" method="initMainPage">
-   			<result>main.jsp</result>
+   			 <result>./main.jsp</result>
    		</action>
    		
+   		<!-- 打开友情链接 -->		
+        <action name="showFriendLink" class="com.govshop.action.FriendLinkAction" method="showFriendLink">
+            <result>./friendslink-list.jsp</result>            
+        </action>
+   		
+   		<!-- 打开管理员登录页面 -->
+   		<action name="admin">
+   			<result>./WEB-INF/admin/pages/admin-login.jsp</result>
+   		</action>	
+         
     </package>
- 
+    
+ 	<include file="struts-admin.xml"></include>
+ 	
 </struts>

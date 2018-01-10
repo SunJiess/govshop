@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -15,29 +16,23 @@
 	<div class="location-txt">友情连接</div>
 </div>
 <div class="info-list-panel">
+ 	<%--错误信息 --%>
+	<s:actionerror/>
+	
 	<ul class="info-list">
-		<li><a href="#">百度一下，你就知道</a></li>
-		<li><a href="#">Google一下，你就晓得</a></li>
-		<li><a href="#">百度一下，你就知道</a></li>
-		<li><a href="#">Google一下，你就晓得</a></li>
-		<li><a href="#">百度一下，你就知道</a></li>
-		<li><a href="#">Google一下，你就晓得</a></li>
-		<li><a href="#">百度一下，你就知道</a></li>
-		<li><a href="#">Google一下，你就晓得</a></li>
-		<li><a href="#">百度一下，你就知道</a></li>
-		<li><a href="#">Google一下，你就晓得</a></li>
-		<li><a href="#">百度一下，你就知道</a></li>
-		<li><a href="#">Google一下，你就晓得</a></li>
-		<li><a href="#">百度一下，你就知道</a></li>
-		<li><a href="#">Google一下，你就晓得</a></li>
-		<li><a href="#">百度一下，你就知道</a></li>
-		<li><a href="#">Google一下，你就晓得</a></li>
+		<s:iterator value="friendsLink" var="friendLink">
+			<li><a href="<s:property value="#friendLink.url"/>" target="_blank"><s:property value="#friendLink.siteName"/></a></li>
+		</s:iterator>
 	</ul>
 	<div class="page-bar-panel">
-		首页
-		上一页
-		下一页
-		末页
+		<s:a href="showFriendLink?page=1">首页</s:a>&nbsp;
+		<s:if test="mypage.hasPreviousPage">
+			<s:a href="showFriendLink?page=%{mypage.prePage}">上一页&nbsp;</s:a>
+		</s:if>
+		<s:if test="mypage.hasNextPage">
+			<s:a href="showFriendLink?page=%{mypage.nextPage}">下一页&nbsp;</s:a>
+		</s:if>
+		<s:a href="showFriendLink?page=%{mypage.totalPage}">尾页</s:a>									
 	</div>
 </div>
 <jsp:include page="./footer-block.jsp"></jsp:include>
